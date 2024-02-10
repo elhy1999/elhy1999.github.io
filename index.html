@@ -50,38 +50,147 @@
 								<p>My project span a wide range of topics. Spanning from image classification (computer vision), text recommender systems (NLP), fall detection models (anomaly detection) and more, my diverse array of machine learning models covers a broad spectrum of industries and problem domains. Check out the <a href="#projects"> projects</a> I've done!</p>
 							</article>
 
-						<!-- Work -->
+						<!-- Projects -->
 						<article id="projects">
-							<h2 class="major">Fall Detection Device</h2>
+
+							<h1 class="">Data Science Projects</h1>
+
+							<!-- m6A Mutation Classifier -->
+							<h2 class="major"><a href="https://github.com/elhy1999/m6AMutationClassifier">m6A Mutation Classification (2023)</a></h2>
+							<span class="image main"><img src="images/genomics.jpg" alt="" /></span>
+							<p>
+								Mutations in the m6A RNA methylation pathway have been linked to various diseases such as cancer. 
+								This genomics project aims to detect m6A mutations on cell lines using RNA sequencing data, taken from the <a href="https://github.com/GoekeLab/sg-nex-data"><span class="label">SG-NEx Project</span></a>. 
+								The data comes in the form of electrical current which are recorded when strands of RNA enter a tiny pore in the measuring device.
+							</p> 
+							<span class="image main"><img src="images/nanopore.gif" alt="" /></span>
+							<p>
+								Since the data is in the form of a multiple-instance learning (MIL) problem where labels are only available for each read (bag) instead of individual nucleotides (instances), this formulates the problem as a weakly supervised learning problem. 
+								The project involves the use of a deep learning model to classify reads into two classes: m6A and non-m6A.
+							</p>
+							<p>
+								The model we built was a random forest model that takes in several quantiles of each instance-level feature as inputs. 
+								These quantiles form the bag-level features, and act as summary statistics of each feature to represent the entire bag. 
+								Fortunately, our team was able to achieve the 3rd best model performance amongst all teams in terms of ROC-AUC score! &#128512
+								More information about our approach can be found in this <a href="https://github.com/elhy1999/m6AMutationClassifier/blob/main/references/deliverables/TeamRC4DSA%20Report.pdf">report</a>, as well as this <a href="https://youtu.be/RIvAfDFy0KU">YouTube video</a>. 
+								You can also find the trained model on my <a href="https://hub.docker.com/repository/docker/elhy1999/quantrf-bagm6a/general">DockerHub repository</a>.
+							</p>
+							<p>
+								Skills: Genomics, Multiple Instance Learning, Random Forests, AWS, Shell Scripting (Linux), Docker
+							</p>
+
+							<!-- Project Morphine -->
+							<h2 class="major"><a href="https://github.com/elhy1999/ProjectMorphine">Fall Detection Device (2023)</a></h2>
 							<span class="image main"><img src="images/elderly falling 3.jpeg" alt="" /></span>
-							<p>This was a project under one of my Co-Curricular Activities (CCA) from NUS called NUS MedTech. The project is named "Project Morphine" and involves building a wearable fall detection device to detect falls in elderly persons.</p> 
-							<p>As you might have guessed, this project's interdisciplinary nature brought together students from the biomedical engineering major, computer science major, and data science major (that's me!) together. Under the data science team which consists of two members, I was directly involved in the entire data science lifecycle for this project - from data collection, data cleaning, exploratory data analysis, model building, model evaluation, and deployment. Our initial prototype garnered the Gold award from the Biomedical Engineering Society (BES) design competition. Click to find out more!</p>
-							<p>Skills: Anomaly Detection, Variational Autoencoders, Autoencoders, Tensorflow, Git, Docker, Google Firebase</p>
+							<p>
+								This was a project under one of my Co-Curricular Activities (CCA) from NUS called NUS MedTech. 
+								The project is named "Project Morphine" and involves building a wearable fall detection device to detect falls in elderly persons.
+							</p> 
+							<p>
+								As you might have guessed, this project's interdisciplinary nature brought together students from the biomedical engineering major, computer science major, and data science major (that's me!) together. 
+								Under the data science team which consists of two members, I was directly involved in the entire data science lifecycle for this project - from data collection, data cleaning, exploratory data analysis, model building, model evaluation, and deployment. 
+								Our initial prototype garnered the Gold award from the Biomedical Engineering Society (BES) design competition.
+							</p>
+							<p>
+								Skills: Anomaly Detection, Variational Autoencoders, Autoencoders, Tensorflow, Docker, Google Firebase
+							</p>
 
-							<h2 class="major">University Recommender System</h2>
+							<!-- University Recommender System -->
+							<h2 class="major"><a href="https://github.com/elhy1999/UniversityRecommender">University Recommender System (2023)</a></h2>
 							<span class="image main"><img src="images/recommender 3.jpeg" alt="" /></span>
-							<p>As prospective university students in Singapore finish their A levels or diploma, it can be extremely confusing and difficult to decide which university to enrol in. Some local universities do not publish module information publicly online, which further adds to the dilemma. This project aims to help students interested in data science to choose which local university they should consider based on their career interests. These recommendations also take into account the skills demanded by the job market today using an automated web scraper for JobStreet and MyCareersFuture.</p> 
-							<p>From scraping job description information from job posting sites, to prompt engineering for generating data using ChatGPT, all the way to leveraging Named Entity Recognition (NER) and Word2Vec models and more, this project displays a wide spectrum of tools & techniques used throughout different stages of the data science lifecycle. Click to find out more!</p>
-							<p>Skills: Web Scraping (Selenium), ChatGPT, Natural Language Processing (NLP), Named Entity Recognition (NER) models, Word Vectorizer models (Word2Vec, TFIDF), SpaCy, NLTK, Gensim, Unit Testing, Git, Docker</p>
+							<p>
+								As prospective university students in Singapore finish their A levels or diploma, it can be extremely confusing and difficult to decide which university to enrol in. 
+								Some local universities do not publish module information publicly online, which further adds to the dilemma. 
+								This project aims to help students interested in data science to choose which local university they should consider based on their career interests. 
+								These recommendations also take into account the skills demanded by the job market today using an automated web scraper for JobStreet and MyCareersFuture.
+							</p> 
+							<p>
+								From scraping job description information from job posting sites, to prompt engineering for generating data using ChatGPT (when ChatGPT was first released), all the way to leveraging Named Entity Recognition (NER) and Word2Vec models and more, this project displays a wide spectrum of tools & techniques used throughout different stages of the data science lifecycle. 
+							</p>
+							<p>
+								Skills: Web Scraping (Selenium), Natural Language Processing (NLP), Named Entity Recognition (NER) models, Word Vectorizer models (Word2Vec, TFIDF), ChatGPT, SpaCy, NLTK, Gensim, Unit Testing, Docker
+							</p>
 
-							<h2 class="major">Weapon Detection</h2>
+							<!-- Weapon Detection -->
+							<h2 class="major"><a href="https://github.com/elhy1999/WeaponDetection">Weapon Detection (2022)</a></h2>
 							<span class="image main"><img src="images/weapon.jpeg" alt="" /></span>
-							<p>With gun-related crimes on the rise, this project aims to develop a weapon detection system to classify images into three categories: Normal (no weapon), Carrying (weapon detected, not posing a threat to anyone), Threat (weapon detected and is a threat).</p>
-							<p>This project taught me the basics of computer vision. It displays knowledge of image augmentation techniques, Convolutional Neural Networks (CNNs), as well as the Grad-CAM method for model interpretability. Click to find out more!</p>
-							<p>Skills: Image Classification, Convolutional Neural Networks (CNNs), Image Preprocessing, Image Augmentation, OpenCV, PIL, Tensorflow, Grad-CAM, Data Cleaning</p>
+							<p>
+								With gun-related crimes on the rise, this project aims to develop a weapon detection system to classify images into three categories: Normal (no weapon), Carrying (weapon detected, not posing a threat to anyone), Threat (weapon detected and is a threat).
+							</p>
+							<p>
+								This project taught me the basics of computer vision. 
+								It displays knowledge of image preprocessing (e.g. noise removal, edge detection, etc.) image augmentation techniques, Convolutional Neural Networks (CNNs), as well as the Grad-CAM method for model interpretability.
+							</p>
+							<p>
+								Skills: Image Classification, Convolutional Neural Networks (CNNs), Image Preprocessing, Image Augmentation, OpenCV, Tensorflow, Grad-CAM, Data Cleaning
+							</p>
 
-							<h2 class="major">Discrete Event Simulator (DES)</h2>
-							<span class="image main"><img src="images/DES.jpeg" alt="" /></span>
-							<p>A Discrete Event Simulator (DES) is a simulation of operations at a particular instance of time. To put it in layman's terms, it simulates a queue. Think of it as a way to simulate customers queuing at your favourite fast food chain. There are multiple cashiers (servers) and multiple customers, each arriving at a predetermined time and taking up different amounts of time to be served (processed).</p>
-							<p>The applications of the DES can be seen throughout almost every industry. We have briefly illustrated the simplistic queue system in a fast food chain above. You could also use the DES to simulate the operations of a port. For instance, you could use the simulator to model the movement of cargo ships and the loading and unloading of containers. This simulation could help port operators evaluate different scenarios such as varying vessel arrival rates, changing berth allocation strategies, or implementing new cargo handling procedures.</p>
-							<p>By simulating the entire process, the DES could provide insights into potential bottlenecks, congestion points, and optimal resource allocation. This could aid in making informed decisions to streamline operations, reduce waiting times for vessels, and ultimately enhance the efficiency and profitability of the port.</p>
-							<p>Skills: Software Engineering, Java, Simulation</p>
-
-							<h2 class="major">Early Detection of Crop Diseases</h2>
+							<!-- Early Detection of Crop Diseases -->
+							<h2 class="major">Early Detection of Crop Diseases (2022)</h2>
 							<span class="image main"><img src="images/Crops.jpeg" alt="" /></span>
-							<p>This project served as my introduction to the world of deep learning. Its purpose was to construct a model capable of detecting signs of diseases in crops. The application of this project aligns with vertical farming, a growing trend in Singapore as the government aims for greater self-reliance in food sources. Prompt detection of crop issues not only enables swift treatment but, more crucially, prevents the spread of infectious diseases among crops, which could severely impact crop yield.</p>
-							<p>The solution employed a Convolutional Neural Network (CNN) model trained through supervised learning. We utilized an open-source image dataset from Kaggle, encompassing images of healthy and infected crops across various species like tomatoes, potatoes, and corn. Ultimately, our efforts resulted in achieving commendable accuracy, precision, and recall measures exceeding 90%.</p>
-							<p>Skills: Image Classification, Convolutional Neural Networks (CNNs)</p>
+							<p>
+								This project served as my introduction to the world of deep learning. 
+								Its purpose was to construct a model capable of detecting signs of diseases in crops. 
+								The application of this project aligns with vertical farming, a growing trend in Singapore as the government aims for greater self-reliance in food sources. 
+								Prompt detection of crop issues not only enables swift treatment but, more crucially, prevents the spread of infectious diseases among crops, which could severely impact crop yield.
+							</p>
+							<p>
+								The solution employed a Convolutional Neural Network (CNN) model trained through supervised learning. 
+								We utilized an open-source image dataset from Kaggle, encompassing images of healthy and infected crops across various species like tomatoes, potatoes, and corn. 
+								Ultimately, our efforts resulted in achieving commendable accuracy, precision, and recall measures exceeding 90%.
+							</p>
+							<p>
+								Skills: Image Classification, Convolutional Neural Networks (CNNs)
+							</p>
+
+							<h1 class="">Software Engineering Projects</h1>
+							<!-- UniCa$h -->
+							<h2 class="major"><a href="https://github.com/elhy1999/UniCash">UniCa$h - Finance Tracker (2023)</a></h2>
+							<span class="image main"><img src="images/unicash.jpg" alt="" /></span>
+							<p>
+								This project is a finance tracker application that allows users to track their income and expenses against their budget.
+								It also provides a feature to plot the user's statistics in a pie chart and line chart.
+							</p>
+							<p>
+								The application was a product of a team project built using Java and JavaFX.
+								It was built under the software engineering module in NUS, and was my first exposure to the software engineering lifecycle.
+								In it, we demonstrated our understanding of software engineering principles, such as the Agile vs Waterfall workflow, use of UML diagrams, several design patterns (e.g. MVC, Singleton, etc.), writing developer and user documentation, designing extensive test cases, code quality, deployment, and more.
+								It also served as an introduction to the use of several tools such as GitHub Actions, Maven, Gradle, the debugger, and the functionalities of the IntelliJ IDE.
+								It was a great opportunity to improve the structure and quality of my code, which I have been able to apply to my subsequent data science projects, giving rise to more maintainable and readable code.
+							</p>
+							<p>
+								All in all, this project taught me fantastic coding practices that I did not learn in the first three years under the typical data science curriculum at NUS, which I believe makes me a more well-rounded data scientist.
+							</p>
+							<p>
+								P.S. This module made me realize how horrible my coding standards were before. It single-handedly convinced me to review all my past projects and refactor them to improve their code quality. &#128128
+							</p>
+							<p>
+								Skills: Building Software in a Team, Agile, Code Quality, Documentation, Testing Principles, Design Patterns, UML Diagrams, Modeling, Requirement Specification, I think there's so much more to list but I'll stop here &#128514
+							</p>
+
+							<!-- Discrete Event Simulator (DES) -->
+							<h2 class="major">Discrete Event Simulator (2021)</h2>
+							<span class="image main"><img src="images/DES.jpeg" alt="" /></span>
+							<p>
+								A Discrete Event Simulator (DES) is a simulation of operations at a particular instance of time. 
+								To put it in layman's terms, it simulates a queue. 
+								Think of it as a way to simulate customers queuing at your favourite fast food chain. 
+								There are multiple cashiers (servers) and multiple customers, each arriving at a predetermined time and taking up different amounts of time to be served (processed).
+							</p>
+							<p>
+								The applications of the DES can be seen throughout almost every industry. 
+								We have briefly illustrated the simplistic queue system in a fast food chain above. 
+								You could also use the DES to simulate the operations of a port. 
+								For instance, you could use the simulator to model the movement of cargo ships and the loading and unloading of containers. 
+								This simulation could help port operators evaluate different scenarios such as varying vessel arrival rates, changing berth allocation strategies, or implementing new cargo handling procedures.
+							</p>
+							<p>
+								By simulating the entire process, the DES could provide insights into potential bottlenecks, congestion points, and optimal resource allocation. 
+								This could aid in making informed decisions to streamline operations, reduce waiting times for vessels, and ultimately enhance the efficiency and profitability of the port.
+							</p>
+							<p>
+								Skills: Software Engineering, Java, Simulation
+							</p>
 						</article>
 						
 
